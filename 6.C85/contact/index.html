@@ -13,11 +13,13 @@
     <h1>Contact</h1>
 
     <nav>
-      <a href="../">Home</a> |
-      <a href="../projects/">Projects</a> |
-      <a href="./">Contact</a> |
-      <a href="../resume/">Resume</a> |
-      <a href="https://github.com/nic1ee" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <ul>
+        <li><a href="../">Home</a></li>
+        <li><a href="../projects/">Projects</a></li>
+        <li><a class="current" href="./">Contact</a></li>
+        <li><a href="../resume/">Resume</a></li>
+        <li><a href="https://github.com/nic1ee" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+      </ul>
     </nav>
   </header>
 
@@ -26,48 +28,40 @@
     <p>
       Feel free to reach out regarding research, collaboration, or professional opportunities.
     </p>
-  
+
     <form action="mailto:nhlee@mit.edu" method="GET">
-  
-      <p>
-        <label>
-          Your Email:
-          <input 
-            type="email" 
-            name="email" 
-            value="example@email.com" 
-            required
-          >
-        </label>
-      </p>
-  
-      <p>
-        <label>
-          Subject:
-          <input 
-            name="subject" 
-            value="Website Inquiry"
-            required
-          >
-        </label>
-      </p>
-  
-      <p>
-        <label>
-          Message:
-          <textarea name="body" rows="5" required>
-  Hello Nic,
-  I’m reaching out about...
-          </textarea>
-        </label>
-      </p>
-  
-      <p>
-        <button>Send</button>
-      </p>
-  
+
+      <label>
+        Your Email:
+        <input 
+          type="email" 
+          name="email" 
+          value="example@email.com" 
+          required
+        >
+      </label>
+
+      <label>
+        Subject:
+        <input 
+          name="subject" 
+          value="Website Inquiry"
+          required
+        >
+      </label>
+
+      <label>
+        Message:
+        <textarea name="body" rows="5" required>
+Hello Nic,
+I’m reaching out about...
+        </textarea>
+      </label>
+
+      <button>Send</button>
+
     </form>
-  
+
   </main>
 
 </body>
