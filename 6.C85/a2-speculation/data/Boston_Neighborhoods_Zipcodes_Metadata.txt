@@ -1,0 +1,20 @@
+Title: Zip Code Neighborhood Data
+Table: zip_code_neighborhood
+Type: csv
+
+Data Source:
+    Source: Unknown
+    Link: N/A
+
+Description:
+This dataset contains zip code and neighborhood names for the Boston Area.
+Note that the zip codes are provided without the leading 0.
+
+Attributes:
+    zip code:
+        type: numeric
+        description: The zip code value (stored without the leading 0).
+
+    neighborhood:
+        type: character
+        description: The name of the neighborhood corresponding to the zip code.
