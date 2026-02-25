@@ -1,0 +1,4 @@
+metric,value
+Pearson r: corp vs vacancy,0.6643380997887652
+Pearson r: corp vs nonwhite,-0.43809832266323234
+slope: vacancy on corp,0.373149042730649
