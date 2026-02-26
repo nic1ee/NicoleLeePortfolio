@@ -1,0 +1,160 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <title>Vis & Society Assignment 3</title>
+  <link rel="stylesheet" href="https://vis-society.github.io/assignments/report.css" />
+</head>
+
+<body>
+  <header>
+    <h1>
+      <small>Assignment 3</small>
+      Visualization Critique & Redesign
+    </h1>
+
+    <p>
+      <strong>Nicole (Nic) Lee</strong> — <em>nhlee@mit.edu</em>
+    </p>
+  </header>
+
+  <main>
+
+ 
+
+    <section>
+      <h2>Reading & Critique</h2>
+
+      <figure>
+        <img src="https://vis-society.github.io/assets/imgs/covid-spiral.png" alt="NYT COVID spiral chart" />
+      </figure>
+
+      <p><strong>Insights about the data/visualization:</strong></p>
+
+      <ul>
+        <li>The U.S. experienced multiple COVID waves from 2020 to early 2022.</li>
+        <li>Winter surges are consistently the largest, especially winter 2020–21 and January 2022.</li>
+        <li>The Omicron spike in January 2022 is dramatically larger than any previous wave.</li>
+        <li>2021 shows several rises and declines, including a summer/fall surge (Delta).</li>
+        <li>Case levels generally increase over time, with later waves reaching higher magnitudes.</li>
+        <li>The 7-day average smooths daily noise and makes overall trends clearer.</li>
+        <li>The article emphasizes that January 2022 would likely set a record for total cases.</li>
+        <li>The key message is about timing (early-to-mid January peak) and scale (millions of cases per week).</li>
+      </ul>
+
+      <p><strong>Design Critique:</strong></p>
+
+      <p>
+        The spiral chart is visually compelling and does a good job reinforcing the idea of repeated seasonal waves.
+        It immediately communicated to me that cases rise and fall over time and makes the Omicron spike feel dramatic and unprecedented.
+        As a lead image in an opinion piece, it works well to capture attention and signal urgency.
+        The use of a 7-day average also helps reduce daily volatility and makes the overall wave patterns readable.
+      </p>
+
+      <p>
+        However, the spiral format makes precise comparisons difficult.
+        Because magnitude is encoded as distance from the center and wrapped around a circle, it is hard to compare peaks across years or clearly judge scale.
+        The reference mark (150K cases) is subtle, and there is no consistent axis anchoring values throughout the chart.
+        As a result, readers likely understand the general story that Omicron is huge, but may struggle to quantify exactly how much larger it is than previous waves.
+        A clearer design could use a linear time axis or stronger annotations to better support the article’s central claim about the timing and magnitude of the January 2022 peak.
+      </p>
+    </section>
+
+  
+
+    <section>
+      <h2>Visualization Sketches</h2>
+
+      <!-- Sketch 1 -->
+      <figure>
+        <img src="images/1.jpg" alt="Sketch 1" />
+        <figcaption>
+          Sketch 1: Linear timeline showing 7-day average cases with vertical markers for major waves.
+        </figcaption>
+      </figure>
+
+      <p><strong>Design Rationale for Sketch 1:</strong></p>
+
+      <ul>
+        <li>I wanted to move away from the spiral and use a clean linear timeline so comparisons across waves are easier.</li>
+        <li>The goal was to clearly show increasing peak magnitudes over time and visually mark major waves like Winter 2020–21, Delta, and Omicron.</li>
+        <li>This design makes it easier to compare height and timing directly.</li>
+        <li>However, it only shows cases and does not directly address the “relative death wave” idea.</li>
+      </ul>
+
+      <!-- Sketch 2 -->
+      <figure>
+        <img src="images/2.jpg" alt="Sketch 2" />
+        <figcaption>
+          Sketch 2: Major waves aligned by “days since surge began” to compare shape and growth speed.
+        </figcaption>
+      </figure>
+
+      <p><strong>Design Rationale for Sketch 2:</strong></p>
+
+      <ul>
+        <li>Here I wanted to compare the shape and speed of each wave more directly.</li>
+        <li>By aligning waves by “days since surge began,” it becomes easier to compare how quickly Omicron rose relative to prior waves.</li>
+        <li>This emphasizes Omicron’s rapid acceleration.</li>
+        <li>However, this removes the broader pandemic timeline context and may be less intuitive for a general audience.</li>
+      </ul>
+
+      <!-- Sketch 3 -->
+      <figure>
+        <img src="images/3.jpg" alt="Sketch 3" />
+        <figcaption>
+          Sketch 3: Focused comparison between Winter 2020–21 and Omicron with shaded emphasis.
+        </figcaption>
+      </figure>
+
+      <p><strong>Design Rationale for Sketch 3:</strong></p>
+
+      <ul>
+        <li>This sketch narrows the focus to the key comparison: Winter 2020–21 versus Omicron.</li>
+        <li>I used shading to emphasize the two major waves and visually compare magnitude.</li>
+        <li>This approach directly supports the article’s central claim.</li>
+        <li>In my final design, I attempted to emulate aspects of this sketch, particularly the emphasis on comparing peak magnitudes and clearly highlighting Omicron.</li>
+        <li>However, the exact shaded comparison approach did not translate cleanly into the final digital version, especially once I introduced deaths and dual axes, so I adjusted the design while keeping the core comparison intact.</li>
+      </ul>
+
+    </section>
+
+   
+
+    <section>
+      <h2>Final Visualization Design</h2>
+
+      <figure>
+        <img src="images/final.png" alt="Final COVID cases and deaths visualization" />
+        <figcaption>
+          Final design: 7-day average new cases and new deaths over time, with the Omicron period highlighted and key peaks annotated.
+        </figcaption>
+      </figure>
+    </section>
+
+   
+
+    <section>
+      <h2>Final Writeup</h2>
+
+      <p>
+        My final design focuses on clearly communicating the central claim that Omicron produced record-breaking case counts but did not generate a proportionally large death wave.
+        Rather than using the spiral format from the original visualization, I chose a linear time-series line chart to make comparisons across waves more direct and legible.
+        The primary goal was to allow viewers to easily compare magnitude between Winter 2020–21 and January 2022.
+        By plotting 7-day average new cases and new deaths across the full pandemic timeline, the visualization emphasizes peak comparison and proportional differences between waves.
+        The shaded band marking the Omicron period and the limited use of annotations direct attention to the key contrast: cases reached their highest level in January 2022, but deaths did not surpass the prior winter peak.
+      </p>
+
+      <p>
+        Position along a shared time axis is the primary encoding, leveraging its perceptual accuracy for comparing trends over time.
+        A dual-axis structure was retained to preserve the natural scale differences between cases and deaths, but both axes are clearly labeled to reduce confusion.
+        Muted but distinct colors differentiate cases and deaths without overwhelming the viewer, and the 7-day average transformation reduces daily reporting noise while preserving overall patterns.
+        Annotations are intentionally minimal and placed only at major peaks to avoid clutter while reinforcing the narrative.
+        Through the critique-by-redesign process, I realized that while Sketch 3’s focused shading approach was conceptually strong, it was more difficult to execute cleanly in the final version without sacrificing clarity.
+        Ultimately, prioritizing temporal clarity and direct magnitude comparison proved more effective for communicating the article’s claim than maintaining the spiral’s visual novelty.
+      </p>
+
+    </section>
+
+  </main>
+</body>
+</html>
