@@ -1,6 +1,4 @@
-/* =========================
-   GLOBAL + LAYOUT
-========================= */
+
 
 :root {
     --color-accent: oklch(65% 50% 0);
@@ -17,7 +15,7 @@
     padding-inline: 1rem;
   }
   
-  /* Headings */
+
   h1 {
     font-size: 4rem; /* strong contrast */
     line-height: 1.1;
@@ -30,15 +28,12 @@
     text-wrap: balance;
   }
   
-  /* Prevent images from getting too wide */
+
   img {
     max-width: 100%;
     display: block;
   }
-  
-  /* =========================
-     NAVIGATION
-  ========================= */
+
   
   nav ul,
   nav li {
@@ -74,9 +69,7 @@
     display: block;
     margin-inline: auto;
   }
-  /* =========================
-     CONTACT FORM (GRID)
-  ========================= */
+
   
   form {
     display: grid;
@@ -110,10 +103,7 @@
     cursor: pointer;
   }
   
-  /* =========================
-     PROJECTS GRID
-  ========================= */
-  
+
   .projects {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
@@ -130,9 +120,7 @@
     margin: 0;
   }
   
-  /* =========================
-     RESUME POLISH
-  ========================= */
+
   
   section {
     margin-bottom: 2rem;
