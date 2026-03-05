@@ -1,0 +1,143 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<title>Vis & Society Assignment 4</title>
+	<link rel="stylesheet" href="https://vis-society.github.io/assignments/report.css" />
+</head>
+
+<body>
+
+<header>
+	<h1>
+		<small>Assignment 4</small>
+		Persuasive or Deceptive Visualization?
+	</h1>
+
+	<p>
+		<strong>Nicole (Nic) Lee</strong> — <em>nhlee@mit.edu</em>
+	</p>
+</header>
+
+<main>
+
+<h2>Proposition: NYPD complaint substantiation rates vary substantially depending on the complainant’s ethnicity.</h2>
+
+<section>
+
+<h3>FOR the Proposition</h3>
+
+<figure>
+	<img src="images/viz_for_gap_extremes.png" alt="Substantiation rate gap visualization" />
+	<figcaption>
+	This visualization highlights the largest observed gap in substantiation rates across complainant ethnicities. 
+	The highest observed rate (~36%) is compared to the lowest (~24%), emphasizing a roughly 12-percentage-point difference 
+	that can also be framed as about 50% higher relative to the lowest group.
+	</figcaption>
+</figure>
+
+<p>
+Design Decisions and Rationale:
+</p>
+
+<ul>
+
+<li>
+<strong>Score: -1.5</strong> — I filtered the visualization to show only the highest and lowest substantiation rates rather than displaying the full distribution of complainant ethnicities.  
+This isolates the most dramatic comparison and encourages the viewer to interpret the difference as the central takeaway. The values themselves are correct, but the choice hides the fact that most other groups fall between these extremes.
+</li>
+
+<li>
+<strong>Score: -1.0</strong> — The title frames the gap using relative language (“50% greater than the lowest”).  
+As discussed in Hullman & Diakopoulos’s work on visualization rhetoric, framing effects can significantly influence interpretation. Expressing the difference as a relative percentage makes the gap feel larger and more consequential than stating the absolute difference alone.
+</li>
+
+<li>
+<strong>Score: -1.5</strong> — The y-axis is zoomed to the observed range (roughly 20%–40%).  
+This visually amplifies the difference between the two points. If the axis extended from 0–100%, the same gap would appear far smaller and less visually dramatic.
+</li>
+
+<li>
+<strong>Score: +0.5</strong> — I added a reference line showing the overall average substantiation rate.  
+This provides some context so the viewer can evaluate whether each group sits above or below the typical rate.
+</li>
+
+<li>
+<strong>Score: +1.0</strong> — I annotated the exact percentages directly on the chart.  
+This helps ensure that the underlying values remain transparent even though the design highlights a dramatic comparison.
+</li>
+
+</ul>
+
+</section>
+
+
+<section>
+
+<h3>AGAINST the Proposition</h3>
+
+<figure>
+	<img src="images/viz_against_similar_rates.png" alt="Substantiation rates across ethnicities bar chart" />
+	<figcaption>
+	This visualization presents all complainant ethnicity categories together and emphasizes that substantiation 
+	rates fall within a relatively narrow band of about 12 percentage points.
+	</figcaption>
+</figure>
+
+<p>
+Design Decisions and Rationale:
+</p>
+
+<ul>
+
+<li>
+<strong>Score: +1.5</strong> — I included all complainant ethnicity categories in the chart rather than highlighting the extremes.  
+This allows viewers to see the full distribution and recognize that most groups cluster relatively closely together.
+</li>
+
+<li>
+<strong>Score: +1.0</strong> — The x-axis runs from 0% to 100%.  
+As Kennedy et al. note in “The Work that Visualization Conventions Do,” familiar conventions such as full axes often signal neutrality and help avoid exaggerating differences.
+</li>
+
+<li>
+<strong>Score: +0.5</strong> — The subtitle explicitly notes that differences fall within a ~12-percentage-point band.  
+This frames the interpretation without hiding the quantitative range of the data.
+</li>
+
+<li>
+<strong>Score: +1.0</strong> — I used a single consistent color across all categories.  
+This avoids visually privileging any one group and keeps attention focused on the magnitude of differences rather than implying categorical hierarchy.
+</li>
+
+<li>
+<strong>Score: +2.0</strong> — I kept categories like Unknown, Refused, and Null rather than removing them.  
+Although these categories make the chart slightly messier, including them reflects the dataset more honestly and acknowledges the uncertainty present in real-world data collection.
+</li>
+
+</ul>
+
+</section>
+
+
+<section>
+
+<h2>Final Reflection</h2>
+
+<p>
+
+Working on this assignment made it clear how easily the same dataset can support two very different narratives depending on visualization choices. When I first explored the complaint dataset, I assumed the results would naturally speak for themselves once the substantiation rates were calculated. However, as soon as I began experimenting with different chart designs, I realized that small decisions—such as filtering categories, choosing axis scales, or framing the title—dramatically influenced the story the visualization communicated. This aligns closely with Hullman and Diakopoulos’s concept of framing effects in narrative visualization: the numbers themselves did not change, but the structure of the visual narrative shaped how viewers interpreted them.
+
+</p>
+
+<p>
+
+One of the most surprising aspects of this process was how strongly visualization conventions influence perceived credibility. Kennedy et al. argue that conventions like full axes and familiar chart types perform “interpretive work” for readers, signaling fairness and neutrality even before the data is analyzed. When comparing the zoomed-axis chart to the full 0–100% version, the zoomed chart felt much more dramatic, while the full-scale version appeared calmer and more balanced—even though both represented the exact same values. Kong et al.’s research on slanted titles also became relevant; simply adjusting how the headline framed the difference significantly shaped the reader’s interpretation before they even processed the chart itself. After completing this assignment, I think ethical visualization is less about avoiding persuasion entirely and more about maintaining transparency about what the data can actually support. Persuasion becomes misleading when it removes essential context or exaggerates relationships that would appear modest if viewers saw the full distribution. This exercise made me realize how thin that line can be and why careful annotation, context, and metadata—like those discussed by Burns et al.—are critical components of responsible data communication.
+
+</p>
+
+</section>
+
+</main>
+
+</body>
+</html>
