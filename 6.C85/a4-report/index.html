@@ -1,130 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Vis & Society 6.C85 — A4 Persuasive/Deceptive Visualization</title>
-  <link rel="stylesheet" href="https://vis-society.github.io/assignments/report.css" />
-</head>
-
-<body>
-  <header>
-    <h1>
-      <small>Assignment 4</small>
-      Persuasive or Deceptive Visualization?
-    </h1>
-
+<section>
+    <h2>Final Reflection</h2>
+    
     <p>
-      <strong>Nicole Lee</strong> — <em>nhlee@mit.edu</em>
+    This assignment made it very clear how easily the same dataset can support multiple interpretations depending on visualization choices. When I first calculated the substantiation rates, I assumed the results would lead to a straightforward conclusion. However, once I began building and iterating on the visualizations, I realized how much interpretation happens before a chart is ever shown. Decisions about filtering, grouping, axis scaling, and even the wording of titles all shape the story the viewer ultimately sees. This directly connects to ideas discussed in lecture about framing and visual rhetoric, where the same data can lead to very different interpretations depending on how it is presented.
     </p>
-  </header>
-
-  <main>
-
-    <h2>Proposition: NYPD complaint substantiation rates vary substantially by complainant ethnicity.</h2>
-
-    <section>
-      <h3>FOR the Proposition</h3>
-      <h4>A 12-percentage-point gap in substantiation rates</h4>
-      <p><em>Dataset:</em> Civilian Complaints Against New York City Police Officers (ProPublica)</p>
-
-      <figure>
-        <img src="images/viz_for_gap_extremes.png" alt="Extremes-only view of substantiation rate gap by complainant ethnicity" />
-        <figcaption>
-          To argue that substantiation <em>does</em> vary by complainant ethnicity, this view isolates the highest and lowest observed rates and frames the difference as a meaningful gap relative to the overall average.
-        </figcaption>
-      </figure>
-
-      <p>Design Decisions and Rationale:</p>
-
-      <ul>
-        <li>
-          <strong>Score -1.5:</strong> I filtered the visualization to show only the highest- and lowest-substantiation ethnicity categories instead of displaying the full distribution.  
-          This makes the difference appear more dramatic because the viewer immediately focuses on the extremes. While the values themselves are correct, removing the intermediate groups hides the broader context of the dataset.
-        </li>
-
-        <li>
-          <strong>Score -1.0:</strong> The title frames the gap using relative language (“50% greater than the lowest”).  
-          This is a framing technique discussed in class, where the same numbers can feel more significant depending on how they are described. Presenting the difference as a relative percentage emphasizes magnitude more strongly than stating the raw difference alone.
-        </li>
-
-        <li>
-          <strong>Score -1.5:</strong> The y-axis is zoomed to the observed range (roughly 20–40%).  
-          This visually amplifies the distance between the points. If the axis extended from 0–100%, the gap would appear much smaller and less visually dramatic.
-        </li>
-
-        <li>
-          <strong>Score +0.5:</strong> I included a reference line showing the overall average substantiation rate.  
-          This provides some contextual grounding for the viewer, allowing them to see whether each group sits above or below the typical rate.
-        </li>
-
-        <li>
-          <strong>Score +1.0:</strong> I annotated the values directly on the chart.  
-          Even though the design emphasizes a persuasive comparison, the numerical values remain visible and verifiable to the viewer.
-        </li>
-      </ul>
+    
+    <p>
+    One surprising part of the process was how often I had to revisit my assumptions about the data itself. Early on, I noticed that my calculation for substantiated cases produced results that seemed unusually high, which forced me to step back and double check how I was grouping the Board Disposition field. That debugging process made me more aware of how easily small data transformation decisions can affect the narrative of a visualization. The dataset also includes categories like Unknown or Refused for complainant ethnicity, which raised questions about whether those records should be included, filtered out, or treated separately. I ultimately chose to keep them visible in the more neutral visualization because removing them would have artificially simplified the dataset.
+    </p>
+    
+    <p>
+    Throughout the design process I experimented with several ways to make the visualizations more visually striking. At one point I considered adding icons or illustrative images next to the categories to make the groups feel more distinct. While those additions made the visualization more eye catching, they also began to feel overly persuasive and somewhat distracting from the data itself. I also experimented with stronger highlighting and more aggressive annotations, but those versions started to feel noisy and less trustworthy. Because of this, I intentionally simplified the final design and relied more on layout and framing rather than decorative elements. This iterative process helped me better understand how easily design choices can shift from clarification into persuasion.
+    </p>
+    
+    <p>
+    Working through both versions of the visualization helped me think more carefully about what ethical analysis and visualization means in practice. I do not think ethical visualization means eliminating persuasion entirely, since every chart requires choices about what comparisons to highlight. However, the boundary seems to appear when design choices remove context that viewers would reasonably expect to see. For example, filtering to only the highest and lowest groups can technically be accurate, but it becomes misleading if the viewer assumes those are the only categories that exist. In contrast, showing the full distribution and using a consistent scale provides more context even if it produces a less dramatic story. This assignment helped me see how thin the line can be between persuasive communication and misleading representation, and how important it is to be transparent about the decisions that shape a visualization.
+    </p>
+    
     </section>
-
-
-    <section>
-      <h3>AGAINST the Proposition</h3>
-      <h4>Substantiation rates are similar across complainant ethnicities</h4>
-
-      <figure>
-        <img src="images/viz_against_similar_rates.png" alt="All-groups view of substantiation rates by complainant ethnicity" />
-        <figcaption>
-          This visualization presents all complainant ethnicity categories together and emphasizes that substantiation rates fall within a relatively narrow band of roughly 12 percentage points.
-        </figcaption>
-      </figure>
-
-      <p>Design Decisions and Rationale:</p>
-
-      <ul>
-        <li>
-          <strong>Score +1.5:</strong> I included all complainant ethnicity categories rather than highlighting only the extremes.  
-          This allows viewers to see the full distribution and recognize that most categories cluster fairly closely together.
-        </li>
-
-        <li>
-          <strong>Score +1.0:</strong> The axis runs from 0–100%.  
-          Using a full scale avoids exaggerating differences and aligns with visualization conventions discussed in lecture that help charts appear more neutral and interpretable.
-        </li>
-
-        <li>
-          <strong>Score +0.5:</strong> The subtitle explicitly states that the spread is about a 12-percentage-point band.  
-          This frames the interpretation while still referencing the actual quantitative range in the dataset.
-        </li>
-
-        <li>
-          <strong>Score +1.0:</strong> I used a single consistent color across categories.  
-          This avoids visually privileging any one group and keeps the focus on comparing magnitudes rather than implying a hierarchy.
-        </li>
-
-        <li>
-          <strong>Score +2.0:</strong> I retained categories like Unknown, Refused, and Null instead of removing them.  
-          Including them reflects the dataset more honestly and acknowledges the uncertainty present in real-world data collection.
-        </li>
-      </ul>
-    </section>
-
-
-    <section>
-      <h2>Final Reflection</h2>
-
-      <p>
-        This assignment made it very clear how easily the same dataset can support multiple interpretations depending on visualization choices. When I first calculated the substantiation rates, I expected the results to be relatively straightforward. However, once I began experimenting with different chart designs, it became obvious that small design decisions — such as filtering categories, choosing axis scales, or framing titles — could dramatically change the narrative the visualization communicated. This connects closely to concepts we discussed in lecture about how visualizations are never completely neutral. Even when the data remains identical, the way it is structured and presented can strongly influence how viewers interpret the results.
-      </p>
-
-      <p>
-        During the design process I went through many iterations where I experimented with additional visual elements that could make the comparison more striking. At one point I considered adding icons or small illustrative images near the points to make the categories feel more visually distinct. We discussed in class how annotations and visual cues can guide interpretation, and initially I thought this might strengthen the story of the chart. However, once I implemented those ideas the visualization started to feel overly persuasive and somewhat untrustworthy. The added illustrations also made the figure feel noisy and distracted from the data itself. Because of this, I intentionally removed those elements and simplified the final version. This iterative process helped me better understand the boundary between persuasive communication and misleading design.
-      </p>
-
-      <p>
-        Overall, I now think ethical data visualization is less about avoiding persuasion entirely and more about maintaining transparency about what the data actually shows. Some persuasive framing is unavoidable, since every visualization requires decisions about scale, comparison, and emphasis. However, a visualization becomes misleading when those choices remove important context or exaggerate relationships that would appear smaller if viewers saw the full distribution. Working through multiple design iterations helped me recognize how easily a chart can cross that line, and it reinforced the importance of clearly presenting the data while still being thoughtful about how visual framing affects interpretation.
-      </p>
-
-    </section>
-
-  </main>
-</body>
-</html>
