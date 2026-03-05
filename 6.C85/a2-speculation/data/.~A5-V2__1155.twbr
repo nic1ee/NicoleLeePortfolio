@@ -1,0 +1,993 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20253.26.0206.0336                               -->
+<workbook original-version='18.1' source-build='2025.3.3 (20253.26.0206.0336)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='allegations_202007271729' inline='true' name='federated.064tddy0boh2af1h4hhqs10ewbpv' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='allegations_202007271729' name='textscan.02qiq611mt8acw14r8sxg03izg10'>
+            <connection class='textscan' directory='/Users/nicolelee/Downloads/CCRB-Complaint-Data_202007271729' filename='allegations_202007271729.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.02qiq611mt8acw14r8sxg03izg10' name='allegations_202007271729.csv' table='[allegations_202007271729#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='unique_mos_id' ordinal='0' />
+            <column datatype='string' name='first_name' ordinal='1' />
+            <column datatype='string' name='last_name' ordinal='2' />
+            <column datatype='string' name='command_now' ordinal='3' />
+            <column datatype='integer' name='shield_no' ordinal='4' />
+            <column datatype='integer' name='complaint_id' ordinal='5' />
+            <column datatype='integer' name='month_received' ordinal='6' />
+            <column datatype='integer' name='year_received' ordinal='7' />
+            <column datatype='integer' name='month_closed' ordinal='8' />
+            <column datatype='integer' name='year_closed' ordinal='9' />
+            <column datatype='string' name='command_at_incident' ordinal='10' />
+            <column datatype='string' name='rank_abbrev_incident' ordinal='11' />
+            <column datatype='string' name='rank_abbrev_now' ordinal='12' />
+            <column datatype='string' name='rank_now' ordinal='13' />
+            <column datatype='string' name='rank_incident' ordinal='14' />
+            <column datatype='string' name='mos_ethnicity' ordinal='15' />
+            <column datatype='string' name='mos_gender' ordinal='16' />
+            <column datatype='integer' name='mos_age_incident' ordinal='17' />
+            <column datatype='string' name='complainant_ethnicity' ordinal='18' />
+            <column datatype='string' name='complainant_gender' ordinal='19' />
+            <column datatype='integer' name='complainant_age_incident' ordinal='20' />
+            <column datatype='string' name='fado_type' ordinal='21' />
+            <column datatype='string' name='allegation' ordinal='22' />
+            <column datatype='integer' name='precinct' ordinal='23' />
+            <column datatype='string' name='contact_reason' ordinal='24' />
+            <column datatype='string' name='outcome_description' ordinal='25' />
+            <column datatype='string' name='board_disposition' ordinal='26' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[allegations_202007271729.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>unique_mos_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[unique_mos_id]</local-name>
+            <parent-name>[allegations_202007271729.csv]</parent-name>
+            <remote-alias>unique_mos_id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[allegations_202007271729.csv_D93B2D6F7E1F48909C3996155DCBD575]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>first_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[first_name]</local-name>
+            <parent-name>[allegations_202007271729.csv]</parent-name>
+            <remote-alias>first_name</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[allegations_202007271729.csv_D93B2D6F7E1F48909C3996155DCBD575]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>last_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[last_name]</local-name>
+            <parent-name>[allegations_202007271729.csv]</parent-name>
+            <remote-alias>last_name</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[allegations_202007271729.csv_D93B2D6F7E1F48909C3996155DCBD575]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>command_now</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[command_now]</local-name>
+            <parent-name>[allegations_202007271729.csv]</parent-name>
+            <remote-alias>command_now</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[allegations_202007271729.csv_D93B2D6F7E1F48909C3996155DCBD575]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>shield_no</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[shield_no]</local-name>
+            <parent-name>[allegations_202007271729.csv]</parent-name>
+            <remote-alias>shield_no</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[allegations_202007271729.csv_D93B2D6F7E1F48909C3996155DCBD575]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>complaint_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[complaint_id]</local-name>
+            <parent-name>[allegations_202007271729.csv]</parent-name>
+            <remote-alias>complaint_id</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[allegations_202007271729.csv_D93B2D6F7E1F48909C3996155DCBD575]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>month_received</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[month_received]</local-name>
+            <parent-name>[allegations_202007271729.csv]</parent-name>
+            <remote-alias>month_received</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[allegations_202007271729.csv_D93B2D6F7E1F48909C3996155DCBD575]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>year_received</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[year_received]</local-name>
+            <parent-name>[allegations_202007271729.csv]</parent-name>
+            <remote-alias>year_received</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[allegations_202007271729.csv_D93B2D6F7E1F48909C3996155DCBD575]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>month_closed</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[month_closed]</local-name>
+            <parent-name>[allegations_202007271729.csv]</parent-name>
+            <remote-alias>month_closed</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[allegations_202007271729.csv_D93B2D6F7E1F48909C3996155DCBD575]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>year_closed</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[year_closed]</local-name>
+            <parent-name>[allegations_202007271729.csv]</parent-name>
+            <remote-alias>year_closed</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[allegations_202007271729.csv_D93B2D6F7E1F48909C3996155DCBD575]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>command_at_incident</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[command_at_incident]</local-name>
+            <parent-name>[allegations_202007271729.csv]</parent-name>
+            <remote-alias>command_at_incident</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[allegations_202007271729.csv_D93B2D6F7E1F48909C3996155DCBD575]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>rank_abbrev_incident</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[rank_abbrev_incident]</local-name>
+            <parent-name>[allegations_202007271729.csv]</parent-name>
+            <remote-alias>rank_abbrev_incident</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[allegations_202007271729.csv_D93B2D6F7E1F48909C3996155DCBD575]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>rank_abbrev_now</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[rank_abbrev_now]</local-name>
+            <parent-name>[allegations_202007271729.csv]</parent-name>
+            <remote-alias>rank_abbrev_now</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[allegations_202007271729.csv_D93B2D6F7E1F48909C3996155DCBD575]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>rank_now</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[rank_now]</local-name>
+            <parent-name>[allegations_202007271729.csv]</parent-name>
+            <remote-alias>rank_now</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[allegations_202007271729.csv_D93B2D6F7E1F48909C3996155DCBD575]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>rank_incident</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[rank_incident]</local-name>
+            <parent-name>[allegations_202007271729.csv]</parent-name>
+            <remote-alias>rank_incident</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[allegations_202007271729.csv_D93B2D6F7E1F48909C3996155DCBD575]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>mos_ethnicity</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[mos_ethnicity]</local-name>
+            <parent-name>[allegations_202007271729.csv]</parent-name>
+            <remote-alias>mos_ethnicity</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[allegations_202007271729.csv_D93B2D6F7E1F48909C3996155DCBD575]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>mos_gender</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[mos_gender]</local-name>
+            <parent-name>[allegations_202007271729.csv]</parent-name>
+            <remote-alias>mos_gender</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[allegations_202007271729.csv_D93B2D6F7E1F48909C3996155DCBD575]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>mos_age_incident</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[mos_age_incident]</local-name>
+            <parent-name>[allegations_202007271729.csv]</parent-name>
+            <remote-alias>mos_age_incident</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[allegations_202007271729.csv_D93B2D6F7E1F48909C3996155DCBD575]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>complainant_ethnicity</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[complainant_ethnicity]</local-name>
+            <parent-name>[allegations_202007271729.csv]</parent-name>
+            <remote-alias>complainant_ethnicity</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[allegations_202007271729.csv_D93B2D6F7E1F48909C3996155DCBD575]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>complainant_gender</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[complainant_gender]</local-name>
+            <parent-name>[allegations_202007271729.csv]</parent-name>
+            <remote-alias>complainant_gender</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[allegations_202007271729.csv_D93B2D6F7E1F48909C3996155DCBD575]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>complainant_age_incident</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[complainant_age_incident]</local-name>
+            <parent-name>[allegations_202007271729.csv]</parent-name>
+            <remote-alias>complainant_age_incident</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[allegations_202007271729.csv_D93B2D6F7E1F48909C3996155DCBD575]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>fado_type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[fado_type]</local-name>
+            <parent-name>[allegations_202007271729.csv]</parent-name>
+            <remote-alias>fado_type</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[allegations_202007271729.csv_D93B2D6F7E1F48909C3996155DCBD575]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>allegation</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[allegation]</local-name>
+            <parent-name>[allegations_202007271729.csv]</parent-name>
+            <remote-alias>allegation</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[allegations_202007271729.csv_D93B2D6F7E1F48909C3996155DCBD575]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>precinct</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[precinct]</local-name>
+            <parent-name>[allegations_202007271729.csv]</parent-name>
+            <remote-alias>precinct</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[allegations_202007271729.csv_D93B2D6F7E1F48909C3996155DCBD575]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>contact_reason</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[contact_reason]</local-name>
+            <parent-name>[allegations_202007271729.csv]</parent-name>
+            <remote-alias>contact_reason</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[allegations_202007271729.csv_D93B2D6F7E1F48909C3996155DCBD575]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>outcome_description</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[outcome_description]</local-name>
+            <parent-name>[allegations_202007271729.csv]</parent-name>
+            <remote-alias>outcome_description</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[allegations_202007271729.csv_D93B2D6F7E1F48909C3996155DCBD575]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>board_disposition</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[board_disposition]</local-name>
+            <parent-name>[allegations_202007271729.csv]</parent-name>
+            <remote-alias>board_disposition</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[allegations_202007271729.csv_D93B2D6F7E1F48909C3996155DCBD575]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Is Substantiated' datatype='integer' name='[Calculation_0079415279972352]' role='dimension' type='ordinal'>
+        <calculation class='tableau' formula='IF STARTSWITH(LOWER(TRIM([board_disposition])), &quot;substantiated&quot;)&#10;THEN 1&#10;ELSE 0&#10;END' />
+      </column>
+      <column caption='Substantiation Rate' datatype='real' name='[Calculation_0079415280041985]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='AVG([Calculation_0079415279972352])' />
+      </column>
+      <column caption='Position' datatype='string' name='[Calculation_0079415286849540]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF [complainant_ethnicity] = &quot;Black&quot; THEN &quot;Lowest&quot;&#10;ELSEIF [complainant_ethnicity] = &quot;American Indian&quot; THEN &quot;Highest&quot;&#10;END' />
+        <aliases>
+          <alias key='&quot;Highest&quot;' value='American Indian' />
+          <alias key='&quot;Lowest&quot;' value='Black' />
+        </aliases>
+      </column>
+      <column caption='allegations_202007271729.csv' datatype='table' name='[__tableau_internal_object_id__].[allegations_202007271729.csv_D93B2D6F7E1F48909C3996155DCBD575]' role='measure' type='quantitative' />
+      <column caption='Allegation' datatype='string' name='[allegation]' role='dimension' type='nominal' />
+      <column caption='Board Disposition' datatype='string' name='[board_disposition]' role='dimension' type='nominal' />
+      <column caption='Command At Incident' datatype='string' name='[command_at_incident]' role='dimension' type='nominal' />
+      <column caption='Command Now' datatype='string' name='[command_now]' role='dimension' type='nominal' />
+      <column caption='Complainant Age Incident' datatype='integer' name='[complainant_age_incident]' role='measure' type='quantitative' />
+      <column caption='Complainant Ethnicity' datatype='string' name='[complainant_ethnicity]' role='dimension' type='nominal' />
+      <column caption='Complainant Gender' datatype='string' name='[complainant_gender]' role='dimension' type='nominal' />
+      <column caption='Complaint Id' datatype='integer' name='[complaint_id]' role='dimension' type='ordinal' />
+      <column caption='Contact Reason' datatype='string' name='[contact_reason]' role='dimension' type='nominal' />
+      <column caption='Fado Type' datatype='string' name='[fado_type]' role='dimension' type='nominal' />
+      <column caption='First Name' datatype='string' name='[first_name]' role='dimension' type='nominal' />
+      <column caption='Last Name' datatype='string' name='[last_name]' role='dimension' type='nominal' />
+      <column caption='Month Closed' datatype='integer' name='[month_closed]' role='dimension' type='quantitative' />
+      <column caption='Month Received' datatype='integer' name='[month_received]' role='dimension' type='quantitative' />
+      <column caption='Mos Age Incident' datatype='integer' name='[mos_age_incident]' role='measure' type='quantitative' />
+      <column caption='Mos Ethnicity' datatype='string' name='[mos_ethnicity]' role='dimension' type='nominal' />
+      <column caption='Mos Gender' datatype='string' name='[mos_gender]' role='dimension' type='nominal' />
+      <column caption='Outcome Description' datatype='string' name='[outcome_description]' role='dimension' type='nominal' />
+      <column caption='Precinct' datatype='integer' name='[precinct]' role='measure' type='quantitative' />
+      <column caption='Rank Abbrev Incident' datatype='string' name='[rank_abbrev_incident]' role='dimension' type='nominal' />
+      <column caption='Rank Abbrev Now' datatype='string' name='[rank_abbrev_now]' role='dimension' type='nominal' />
+      <column caption='Rank Incident' datatype='string' name='[rank_incident]' role='dimension' type='nominal' />
+      <column caption='Rank Now' datatype='string' name='[rank_now]' role='dimension' type='nominal' />
+      <column caption='Shield No' datatype='integer' name='[shield_no]' role='measure' type='quantitative' />
+      <column caption='Unique Mos Id' datatype='integer' name='[unique_mos_id]' role='dimension' type='ordinal' />
+      <column caption='Year Closed' datatype='integer' name='[year_closed]' role='dimension' type='quantitative' />
+      <column caption='Year Received' datatype='integer' name='[year_received]' role='dimension' type='quantitative' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='allegations_202007271729.csv' id='allegations_202007271729.csv_D93B2D6F7E1F48909C3996155DCBD575'>
+            <properties context=''>
+              <relation connection='textscan.02qiq611mt8acw14r8sxg03izg10' name='allegations_202007271729.csv' table='[allegations_202007271729#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='unique_mos_id' ordinal='0' />
+                  <column datatype='string' name='first_name' ordinal='1' />
+                  <column datatype='string' name='last_name' ordinal='2' />
+                  <column datatype='string' name='command_now' ordinal='3' />
+                  <column datatype='integer' name='shield_no' ordinal='4' />
+                  <column datatype='integer' name='complaint_id' ordinal='5' />
+                  <column datatype='integer' name='month_received' ordinal='6' />
+                  <column datatype='integer' name='year_received' ordinal='7' />
+                  <column datatype='integer' name='month_closed' ordinal='8' />
+                  <column datatype='integer' name='year_closed' ordinal='9' />
+                  <column datatype='string' name='command_at_incident' ordinal='10' />
+                  <column datatype='string' name='rank_abbrev_incident' ordinal='11' />
+                  <column datatype='string' name='rank_abbrev_now' ordinal='12' />
+                  <column datatype='string' name='rank_now' ordinal='13' />
+                  <column datatype='string' name='rank_incident' ordinal='14' />
+                  <column datatype='string' name='mos_ethnicity' ordinal='15' />
+                  <column datatype='string' name='mos_gender' ordinal='16' />
+                  <column datatype='integer' name='mos_age_incident' ordinal='17' />
+                  <column datatype='string' name='complainant_ethnicity' ordinal='18' />
+                  <column datatype='string' name='complainant_gender' ordinal='19' />
+                  <column datatype='integer' name='complainant_age_incident' ordinal='20' />
+                  <column datatype='string' name='fado_type' ordinal='21' />
+                  <column datatype='string' name='allegation' ordinal='22' />
+                  <column datatype='integer' name='precinct' ordinal='23' />
+                  <column datatype='string' name='contact_reason' ordinal='24' />
+                  <column datatype='string' name='outcome_description' ordinal='25' />
+                  <column datatype='string' name='board_disposition' ordinal='26' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource inline='true' name='Clipboard_20260304T221823' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Clipboard_20260304T221823' name='Clipboard_20260304T221823leaf'>
+            <connection class='textscan' directory='/var/folders/mb/tndw141d1zgc088hbr25y3c80000gn/T/tableau-temp/1ppt2zw013gjvp198myei0ay8yi9' filename='Clipboard_20260304T221823.txt' temporary='yes' />
+          </named-connection>
+        </named-connections>
+        <relation connection='Clipboard_20260304T221823leaf' name='Clipboard_20260304T221823#txt' table='[Clipboard_20260304T221823#txt]' type='table' />
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Clipboard_20260304T221823' datatype='table' name='[__tableau_internal_object_id__].[Clipboard_20260304T221823]' role='measure' type='quantitative' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='Clipboard_20260304T221823' id='Clipboard_20260304T221823'>
+            <properties context=''>
+              <relation connection='Clipboard_20260304T221823leaf' name='Clipboard_20260304T221823#txt' table='[Clipboard_20260304T221823#txt]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource inline='true' name='Clipboard_20260304T221828' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Clipboard_20260304T221828' name='Clipboard_20260304T221828leaf'>
+            <connection class='textscan' directory='/var/folders/mb/tndw141d1zgc088hbr25y3c80000gn/T/tableau-temp/0ey8ugb1goxjbw1b18key1gjshr2' filename='Clipboard_20260304T221828.txt' temporary='yes' />
+          </named-connection>
+        </named-connections>
+        <relation connection='Clipboard_20260304T221828leaf' name='Clipboard_20260304T221828#txt' table='[Clipboard_20260304T221828#txt]' type='table' />
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Clipboard_20260304T221828' datatype='table' name='[__tableau_internal_object_id__].[Clipboard_20260304T221828]' role='measure' type='quantitative' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='Clipboard_20260304T221828' id='Clipboard_20260304T221828'>
+            <properties context=''>
+              <relation connection='Clipboard_20260304T221828leaf' name='Clipboard_20260304T221828#txt' table='[Clipboard_20260304T221828#txt]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource inline='true' name='Clipboard_20260304T221829' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Clipboard_20260304T221829' name='Clipboard_20260304T221829leaf'>
+            <connection class='textscan' directory='/var/folders/mb/tndw141d1zgc088hbr25y3c80000gn/T/tableau-temp/1dwbzh00clu2u61auemmq1djxv1r' filename='Clipboard_20260304T221829.txt' temporary='yes' />
+          </named-connection>
+        </named-connections>
+        <relation connection='Clipboard_20260304T221829leaf' name='Clipboard_20260304T221829#txt' table='[Clipboard_20260304T221829#txt]' type='table' />
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Clipboard_20260304T221829' datatype='table' name='[__tableau_internal_object_id__].[Clipboard_20260304T221829]' role='measure' type='quantitative' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='Clipboard_20260304T221829' id='Clipboard_20260304T221829'>
+            <properties context=''>
+              <relation connection='Clipboard_20260304T221829leaf' name='Clipboard_20260304T221829#txt' table='[Clipboard_20260304T221829#txt]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource inline='true' name='Clipboard_20260304T221840' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Clipboard_20260304T221840' name='Clipboard_20260304T221840leaf'>
+            <connection class='textscan' directory='/var/folders/mb/tndw141d1zgc088hbr25y3c80000gn/T/tableau-temp/0vy1gti0npktn717kddak1o4ba6l' filename='Clipboard_20260304T221840.txt' temporary='yes' />
+          </named-connection>
+        </named-connections>
+        <relation connection='Clipboard_20260304T221840leaf' name='Clipboard_20260304T221840#txt' table='[Clipboard_20260304T221840#txt]' type='table' />
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Clipboard_20260304T221840' datatype='table' name='[__tableau_internal_object_id__].[Clipboard_20260304T221840]' role='measure' type='quantitative' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='Clipboard_20260304T221840' id='Clipboard_20260304T221840'>
+            <properties context=''>
+              <relation connection='Clipboard_20260304T221840leaf' name='Clipboard_20260304T221840#txt' table='[Clipboard_20260304T221840#txt]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#000000' fontname='American Typewriter'>Substantiation Rates Are Similar Across Complainant Ethnicities</run>
+            <run>Æ&#10;&#10;</run>
+            <run fontcolor='#000000' fontname='American Typewriter' fontsize='10'>Differences are modest and largely fall within a 12-percentage-point band</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='allegations_202007271729' name='federated.064tddy0boh2af1h4hhqs10ewbpv' />
+          </datasources>
+          <datasource-dependencies datasource='federated.064tddy0boh2af1h4hhqs10ewbpv'>
+            <column caption='Is Substantiated' datatype='integer' name='[Calculation_0079415279972352]' role='dimension' type='ordinal'>
+              <calculation class='tableau' formula='IF STARTSWITH(LOWER(TRIM([board_disposition])), &quot;substantiated&quot;)&#10;THEN 1&#10;ELSE 0&#10;END' />
+            </column>
+            <column-instance column='[Calculation_0079415279972352]' derivation='Avg' name='[avg:Calculation_0079415279972352:qk]' pivot='key' type='quantitative' />
+            <column caption='Board Disposition' datatype='string' name='[board_disposition]' role='dimension' type='nominal' />
+            <column caption='Complainant Ethnicity' datatype='string' name='[complainant_ethnicity]' role='dimension' type='nominal' />
+            <column-instance column='[complainant_ethnicity]' derivation='None' name='[none:complainant_ethnicity:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.064tddy0boh2af1h4hhqs10ewbpv].[none:complainant_ethnicity:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.064tddy0boh2af1h4hhqs10ewbpv].[avg:Calculation_0079415279972352:qk]' shelf='rows' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.064tddy0boh2af1h4hhqs10ewbpv].[avg:Calculation_0079415279972352:qk]' field-type='quantitative' max='1.05' min='0.0' range-type='fixed' scope='cols' type='space' />
+            <format attr='title' class='0' field='[federated.064tddy0boh2af1h4hhqs10ewbpv].[avg:Calculation_0079415279972352:qk]' scope='cols' value='Substantiation Rate (%)' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.064tddy0boh2af1h4hhqs10ewbpv].[avg:Calculation_0079415279972352:qk]' value='p0.00%' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#3eb2ab' />
+                <format attr='size' value='1.5602209568023682' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.064tddy0boh2af1h4hhqs10ewbpv].[none:complainant_ethnicity:nk]</rows>
+        <cols>[federated.064tddy0boh2af1h4hhqs10ewbpv].[avg:Calculation_0079415279972352:qk]</cols>
+      </table>
+      <simple-id uuid='{0F55CA8B-B0D4-48E3-BE9C-4402D1B66E96}' />
+    </worksheet>
+    <worksheet name='Sheet 1 (2)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#000000' fontname='Copperplate' fontsize='28'>A 12-Percentage-Point Gap in Substantiation Rates</run>
+            <run>Æ&#10;&#10;</run>
+            <run fontcolor='#000000' fontname='Copperplate' fontsize='12'>The Highest Substantiation Rate Is 50% Greater Than the Lowest</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='allegations_202007271729' name='federated.064tddy0boh2af1h4hhqs10ewbpv' />
+          </datasources>
+          <datasource-dependencies datasource='federated.064tddy0boh2af1h4hhqs10ewbpv'>
+            <column caption='Is Substantiated' datatype='integer' name='[Calculation_0079415279972352]' role='dimension' type='ordinal'>
+              <calculation class='tableau' formula='IF STARTSWITH(LOWER(TRIM([board_disposition])), &quot;substantiated&quot;)&#10;THEN 1&#10;ELSE 0&#10;END' />
+            </column>
+            <column caption='Position' datatype='string' name='[Calculation_0079415286849540]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [complainant_ethnicity] = &quot;Black&quot; THEN &quot;Lowest&quot;&#10;ELSEIF [complainant_ethnicity] = &quot;American Indian&quot; THEN &quot;Highest&quot;&#10;END' />
+              <aliases>
+                <alias key='&quot;Highest&quot;' value='American Indian' />
+                <alias key='&quot;Lowest&quot;' value='Black' />
+              </aliases>
+            </column>
+            <column-instance column='[Calculation_0079415279972352]' derivation='Avg' name='[avg:Calculation_0079415279972352:qk]' pivot='key' type='quantitative' />
+            <column caption='Board Disposition' datatype='string' name='[board_disposition]' role='dimension' type='nominal' />
+            <column caption='Complainant Ethnicity' datatype='string' name='[complainant_ethnicity]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_0079415286849540]' derivation='None' name='[none:Calculation_0079415286849540:nk]' pivot='key' type='nominal' />
+            <column-instance column='[complainant_ethnicity]' derivation='None' name='[none:complainant_ethnicity:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.064tddy0boh2af1h4hhqs10ewbpv].[none:complainant_ethnicity:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:complainant_ethnicity:nk]' member='&quot;American Indian&quot;' />
+              <groupfilter function='member' level='[none:complainant_ethnicity:nk]' member='&quot;Black&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.064tddy0boh2af1h4hhqs10ewbpv].[none:complainant_ethnicity:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.064tddy0boh2af1h4hhqs10ewbpv].[avg:Calculation_0079415279972352:qk]' field-type='quantitative' max='0.4' min='0.2' range-type='fixed' scope='rows' type='space' />
+            <format attr='title' class='0' field='[federated.064tddy0boh2af1h4hhqs10ewbpv].[avg:Calculation_0079415279972352:qk]' scope='rows' value='Substantiation Rate (%)' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.064tddy0boh2af1h4hhqs10ewbpv].[avg:Calculation_0079415279972352:qk]' value='p0.00%' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='fill-above' id='refline0' value='#00000000' />
+            <format attr='fill-below' id='refline0' value='#00000000' />
+            <format attr='line-visibility' id='refline0' value='on' />
+            <format attr='line-pattern-only' id='refline0' value='dashed' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <lod column='[federated.064tddy0boh2af1h4hhqs10ewbpv].[none:Calculation_0079415286849540:nk]' />
+            </encodings>
+            <reference-line axis-column='[federated.064tddy0boh2af1h4hhqs10ewbpv].[avg:Calculation_0079415279972352:qk]' enable-instant-analytics='true' formula='average' id='refline0' label='Overall Overage' label-type='custom' probability='95' scope='per-table' value-column='[federated.064tddy0boh2af1h4hhqs10ewbpv].[avg:Calculation_0079415279972352:qk]' z-order='1' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#ae0812' />
+                <format attr='size' value='1.5602209568023682' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.064tddy0boh2af1h4hhqs10ewbpv].[avg:Calculation_0079415279972352:qk]</rows>
+        <cols>[federated.064tddy0boh2af1h4hhqs10ewbpv].[none:Calculation_0079415286849540:nk]</cols>
+        <annotations>
+          <annotation class='point' id='2' mark-position='1' pullback='12' text-width='180'>
+            <formatted-text>
+              <run bold='true' fontname='Copperplate'>36%</run>
+              <run>Æ&#10;</run>
+              <run bold='true' fontname='Copperplate'>Highest observed substantiation rate</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.064tddy0boh2af1h4hhqs10ewbpv].[none:Calculation_0079415286849540:nk]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.064tddy0boh2af1h4hhqs10ewbpv].[avg:Calculation_0079415279972352:qk]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.064tddy0boh2af1h4hhqs10ewbpv].[avg:Calculation_0079415279972352:qk]</field>
+                      <field>[federated.064tddy0boh2af1h4hhqs10ewbpv].[none:Calculation_0079415286849540:nk]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>0.359375</value>
+                    <value>&quot;Highest&quot;</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='130' y='-20' />
+          </annotation>
+          <annotation class='point' id='3' mark-position='1' pullback='12' text-width='180'>
+            <formatted-text>
+              <run fontcolor='#000000' fontname='Copperplate'>24%</run>
+              <run>Æ&#10;</run>
+              <run fontcolor='#000000' fontname='Copperplate'>Lowest observed substantiation rate</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.064tddy0boh2af1h4hhqs10ewbpv].[none:Calculation_0079415286849540:nk]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.064tddy0boh2af1h4hhqs10ewbpv].[avg:Calculation_0079415279972352:qk]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.064tddy0boh2af1h4hhqs10ewbpv].[avg:Calculation_0079415279972352:qk]</field>
+                      <field>[federated.064tddy0boh2af1h4hhqs10ewbpv].[none:Calculation_0079415286849540:nk]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>0.23799228701647773</value>
+                    <value>&quot;Lowest&quot;</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='130' y='-20' />
+          </annotation>
+        </annotations>
+      </table>
+      <simple-id uuid='{E22F1E9B-7701-4968-8304-94F488F278F8}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='allegations_202007271729' name='federated.064tddy0boh2af1h4hhqs10ewbpv' />
+          </datasources>
+          <datasource-dependencies datasource='federated.064tddy0boh2af1h4hhqs10ewbpv'>
+            <column caption='Complainant Ethnicity' datatype='string' name='[complainant_ethnicity]' role='dimension' type='nominal' />
+            <column-instance column='[complainant_ethnicity]' derivation='None' name='[none:complainant_ethnicity:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.064tddy0boh2af1h4hhqs10ewbpv].[none:complainant_ethnicity:nk]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{9F524A53-C59D-43B8-B238-42F6926DA9DD}' />
+    </worksheet>
+    <worksheet name='Sheet 4'>
+      <table>
+        <view>
+          <datasources>
+            <datasource name='Clipboard_20260304T221840' />
+          </datasources>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{C5563C6A-BB5C-4C69-AE42-E0CCAB6825F4}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{F63BC71D-1E28-4929-9C3D-1CAA2140F00B}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Sheet 1 (2)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{ED86E6CF-AFED-4FC7-BED0-A659061564D1}' />
+    </window>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{04D34EAE-4DC7-423F-8325-03E38510FBCD}' />
+    </window>
+    <window class='worksheet' name='Sheet 4'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{BE1338D2-AD42-457E-989A-8CD13784F0DD}' />
+    </window>
+  </windows>
+</workbook>
